@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Aromatik — Esencia de l'Empordà · Peratallada, Costa Brava</title>
+<meta name="description" content="Reserva directa de Casa Aromatik en Peratallada, Costa Brava. Minicasa con piscina privada, jardín de 6500m² y barbacoa. Hasta 5 viajeros. Sin comisiones de intermediarios.">
+<meta name="theme-color" content="#1F2A1E">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Casa Aromatik — Esencia de l'Empordà">
+<meta property="og:description" content="Minicasa con piscina privada en Peratallada, Costa Brava. Reserva directa sin comisiones.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Casa Aromatik Esencia Empordà",
+  "description": "Minicasa rural con piscina privada en Peratallada, Costa Brava. 2 dormitorios, hasta 5 viajeros, jardín de 6500m².",
+  "image": "https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Peratallada",
+    "addressRegion": "Girona",
+    "addressCountry": "ES"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.96",
+    "reviewCount": "27"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Piscina privada"},
+    {"@type": "LocationFeatureSpecification", "name": "WiFi 200 Mbps"},
+    {"@type": "LocationFeatureSpecification", "name": "Aire acondicionado"},
+    {"@type": "LocationFeatureSpecification", "name": "Aparcamiento gratuito"},
+    {"@type": "LocationFeatureSpecification", "name": "Barbacoa"}
+  ],
+  "identifier": "HUTG-078586"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ==========================================================
+     PALETA Y TOKENS
+     ========================================================== */
+  :root {
+    --cream: #F5F0E8;
+    --cream-dark: #EBE3D5;
+    --forest: #1F2A1E;
+    --forest-soft: #2D3A2A;
+    --olive: #6B7A5A;
+    --terracotta: #B5613A;
+    --terracotta-soft: #D4825A;
+    --ink: #2A2825;
+    --ink-mute: #6E6A62;
+    --line: #D8CFBF;
+
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --container: 1280px;
+    --gutter: clamp(20px, 5vw, 64px);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ==========================================================
+     TIPOGRAFÍA
+     ========================================================== */
+  .display {
+    font-family: var(--serif);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .display-italic {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--olive);
+  }
+  .body-lg { font-size: 18px; line-height: 1.7; color: var(--ink); }
+  .body-mute { color: var(--ink-mute); }
+
+  /* ==========================================================
+     LAYOUT
+     ========================================================== */
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+  section { padding: clamp(72px, 10vw, 140px) 0; }
+
+  /* ==========================================================
+     NAV
+     ========================================================== */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 18px var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background .35s ease, backdrop-filter .35s ease, padding .35s ease;
+  }
+  .nav.scrolled {
+    background: rgba(245, 240, 232, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 12px var(--gutter);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav__logo {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--cream);
+    transition: color .35s ease;
+  }
+  .nav.scrolled .nav__logo { color: var(--forest); }
+  .nav__logo span { font-style: normal; font-family: var(--sans); font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; display: block; opacity: 0.7; margin-top: -2px; }
+
+  .nav__links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    list-style: none;
+  }
+  .nav__links a {
+    font-size: 13px;
+    color: var(--cream);
+    letter-spacing: 0.04em;
+    transition: color .25s ease;
+  }
+  .nav.scrolled .nav__links a { color: var(--forest); }
+  .nav__links a:hover { color: var(--terracotta-soft); }
+
+  .nav__cta {
+    background: var(--terracotta);
+    color: #fff !important;
+    padding: 11px 22px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background .25s ease, transform .25s ease;
+  }
+  .nav__cta:hover { background: #9A4F2C; transform: translateY(-1px); }
+
+  .nav__burger { display: none; background: none; border: none; cursor: pointer; color: var(--cream); }
+  .nav.scrolled .nav__burger { color: var(--forest); }
+
+  @media (max-width: 880px) {
+    .nav__links { display: none; }
+    .nav__burger { display: block; }
+    .nav__links.open {
+      display: flex;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      background: var(--cream);
+      padding: 24px var(--gutter);
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .nav__links.open a { color: var(--forest) !important; }
+  }
+
+  /* ==========================================================
+     HERO
+     ========================================================== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    color: var(--cream);
+    padding: 0 0 80px 0;
+    overflow: hidden;
+  }
+  .hero__bg {
+    position: absolute; inset: 0;
+    background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transform: scale(1.05);
+    animation: heroZoom 14s ease-out forwards;
+  }
+  @keyframes heroZoom {
+    to { transform: scale(1); }
+  }
+  .hero__overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(31,42,30,0.45) 0%, rgba(31,42,30,0.15) 35%, rgba(31,42,30,0.85) 100%);
+    z-index: 1;
+  }
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 var(--gutter);
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+  .hero__eyebrow {
+    color: rgba(245,240,232,0.85);
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: fadeUp .9s ease-out .3s forwards;
+  }
+  .hero__title {
+    font-size: clamp(48px, 9vw, 124px);
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out .5s forwards;
+  }
+  .hero__title em { font-style: italic; }
+  .hero__sub {
+    font-size: clamp(18px, 2.2vw, 24px);
+    max-width: 520px;
+    color: rgba(245,240,232,0.88);
+    margin: 28px 0 40px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out .7s forwards;
+  }
+  .hero__actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 1s ease-out .9s forwards;
+  }
+  .btn-primary {
+    background: var(--terracotta);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-primary:hover { background: #9A4F2C; transform: translateY(-2px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    padding: 16px 32px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid rgba(245,240,232,0.5);
+    cursor: pointer;
+    transition: background .25s ease, border-color .25s ease;
+  }
+  .btn-ghost:hover { background: rgba(245,240,232,0.1); border-color: var(--cream); }
+
+  .hero__meta {
+    position: absolute;
+    bottom: 80px;
+    right: var(--gutter);
+    z-index: 2;
+    text-align: right;
+    color: rgba(245,240,232,0.85);
+    opacity: 0;
+    animation: fadeUp 1s ease-out 1.1s forwards;
+  }
+  .hero__meta .stars { font-size: 18px; letter-spacing: 0.05em; color: var(--cream); }
+  .hero__meta .stars span { color: var(--terracotta-soft); }
+  .hero__meta .reviews { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 6px; }
+  @media (max-width: 720px) {
+    .hero__meta { display: none; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ==========================================================
+     INTRO / WELCOME
+     ========================================================== */
+  .intro {
+    background: var(--cream);
+    position: relative;
+  }
+  .intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 8vw, 100px);
+    align-items: center;
+  }
+  .intro__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin: 18px 0 32px;
+  }
+  .intro__title em { font-style: italic; color: var(--olive); }
+  .intro__text p { margin-bottom: 18px; font-size: 17px; }
+  .intro__signature {
+    margin-top: 32px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--olive);
+  }
+  .intro__signature small {
+    display: block;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 4px;
+  }
+  .intro__image {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .intro__image img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1.2s ease;
+  }
+  .intro__image:hover img { transform: scale(1.04); }
+  .intro__image::after {
+    content: 'Peratallada · Girona';
+    position: absolute;
+    bottom: 20px; left: 20px;
+    background: var(--cream);
+    padding: 8px 16px;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--forest);
+  }
+  @media (max-width: 880px) {
+    .intro__grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==========================================================
+     STATS BAR
+     ========================================================== */
+  .stats {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 60px 0;
+  }
+  .stats__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    text-align: center;
+  }
+  .stats__num {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5vw, 56px);
+    line-height: 1;
+    color: var(--cream);
+  }
+  .stats__label {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.65);
+    margin-top: 10px;
+  }
+  @media (max-width: 720px) {
+    .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 40px 20px; }
+  }
+
+  /* ==========================================================
+     FEATURES
+     ========================================================== */
+  .features__head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px;
+  }
+  .features__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin-top: 18px;
+  }
+  .features__title em { font-style: italic; color: var(--terracotta); }
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .feature {
+    background: var(--cream);
+    padding: 48px 32px;
+    transition: background .35s ease;
+  }
+  .feature:hover { background: var(--cream-dark); }
+  .feature__icon {
+    width: 36px; height: 36px;
+    color: var(--olive);
+    margin-bottom: 24px;
+  }
+  .feature__name {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .feature__desc {
+    font-size: 14px;
+    color: var(--ink-mute);
+    line-height: 1.6;
+  }
+  @media (max-width: 880px) { .features__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .features__grid { grid-template-columns: 1fr; } }
+
+  /* ==========================================================
+     GALLERY
+     ========================================================== */
+  .gallery {
+    background: var(--cream-dark);
+  }
+  .gallery__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .gallery__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin-top: 12px;
+  }
+  .gallery__title em { font-style: italic; color: var(--olive); }
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 12px;
+  }
+  .gallery__item {
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .gallery__item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+  }
+  .gallery__item:hover img { transform: scale(1.06); }
+  .gallery__item--tall { grid-row: span 2; }
+  .gallery__item--wide { grid-column: span 2; }
+  @media (max-width: 880px) {
+    .gallery__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+    .gallery__item--wide { grid-column: span 2; }
+    .gallery__item--tall { grid-row: span 1; }
+  }
+
+  /* ==========================================================
+     ROOMS
+     ========================================================== */
+  .rooms__head {
+    margin-bottom: 60px;
+    max-width: 700px;
+  }
+  .rooms__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin-top: 18px;
+  }
+  .rooms__title em { font-style: italic; color: var(--terracotta); }
+  .rooms__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .room {
+    background: var(--cream);
+  }
+  .room__image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .room__image img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+  .room:hover .room__image img { transform: scale(1.04); }
+  .room__name {
+    font-family: var(--serif);
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .room__beds {
+    font-size: 14px;
+    color: var(--ink-mute);
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 720px) { .rooms__grid { grid-template-columns: 1fr; } }
+
+  /* ==========================================================
+     LOCATION
+     ========================================================== */
+  .location {
+    background: var(--forest);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .location__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 8vw, 100px);
+    align-items: center;
+  }
+  .location__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin: 18px 0 32px;
+    color: var(--cream);
+  }
+  .location__title em { font-style: italic; color: var(--terracotta-soft); }
+  .location__text p { color: rgba(245,240,232,0.85); margin-bottom: 18px; font-size: 17px; }
+  .location__list {
+    list-style: none;
+    margin-top: 32px;
+    border-top: 1px solid rgba(245,240,232,0.15);
+  }
+  .location__list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(245,240,232,0.15);
+    font-size: 15px;
+  }
+  .location__list li span:last-child {
+    color: var(--terracotta-soft);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+  }
+  .location__map {
+    aspect-ratio: 4 / 5;
+    background: #2D3A2A;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .location__map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.3) sepia(0.1); }
+  @media (max-width: 880px) { .location__grid { grid-template-columns: 1fr; } }
+
+  /* ==========================================================
+     REVIEWS
+     ========================================================== */
+  .reviews {
+    background: var(--cream);
+    text-align: center;
+  }
+  .reviews__rating {
+    font-family: var(--serif);
+    font-size: clamp(80px, 12vw, 160px);
+    line-height: 1;
+    color: var(--forest);
+  }
+  .reviews__rating .of {
+    font-size: 0.4em;
+    color: var(--ink-mute);
+  }
+  .reviews__stars {
+    color: var(--terracotta);
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin: 16px 0 8px;
+  }
+  .reviews__count {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .reviews__breakdown {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 60px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+  }
+  .review-stat__num {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--forest);
+  }
+  .review-stat__label {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 6px;
+  }
+  .reviews__quotes {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: left;
+  }
+  .quote {
+    padding: 32px;
+    background: var(--cream-dark);
+    border-radius: 2px;
+  }
+  .quote__text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  .quote__author {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--olive);
+  }
+  @media (max-width: 880px) {
+    .reviews__breakdown { grid-template-columns: repeat(3, 1fr); }
+    .reviews__quotes { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 540px) { .reviews__breakdown { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ==========================================================
+     BOOKING — donde va Smoobu
+     ========================================================== */
+  .booking {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+    position: relative;
+  }
+  .booking__head {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 60px;
+  }
+  .booking__title {
+    font-size: clamp(40px, 6vw, 80px);
+    margin-top: 18px;
+  }
+  .booking__title em { font-style: italic; color: var(--terracotta); }
+  .booking__perks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .perk {
+    text-align: center;
+    padding: 28px 20px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+  .perk__icon {
+    width: 32px; height: 32px;
+    margin: 0 auto 16px;
+    color: var(--terracotta);
+  }
+  .perk__title {
+    font-family: var(--serif);
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .perk__desc {
+    font-size: 13px;
+    color: var(--ink-mute);
+  }
+  .booking__widget {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: clamp(20px, 3vw, 40px);
+    border-radius: 4px;
+    min-height: 600px;
+    box-shadow: 0 24px 60px -32px rgba(31,42,30,0.25);
+  }
+  .booking__placeholder {
+    background: repeating-linear-gradient(
+      45deg,
+      var(--cream-dark),
+      var(--cream-dark) 12px,
+      var(--cream) 12px,
+      var(--cream) 24px
+    );
+    padding: 60px 32px;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px dashed var(--olive);
+  }
+  .booking__placeholder h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+  .booking__placeholder p {
+    color: var(--ink-mute);
+    max-width: 500px;
+    margin: 0 auto 8px;
+    font-size: 14px;
+  }
+  .booking__placeholder code {
+    display: inline-block;
+    background: var(--forest);
+    color: var(--cream);
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 4px 2px;
+    font-family: 'Courier New', monospace;
+  }
+  @media (max-width: 720px) { .booking__perks { grid-template-columns: 1fr; } }
+
+  /* ==========================================================
+     FAQ
+     ========================================================== */
+  .faq__title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin: 18px 0 60px;
+  }
+  .faq__title em { font-style: italic; color: var(--olive); }
+  .faq__list { max-width: 800px; }
+  .faq__item {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 0;
+    cursor: pointer;
+  }
+  .faq__item summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--forest);
+    transition: color .25s ease;
+  }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after {
+    content: '+';
+    font-family: var(--sans);
+    font-size: 28px;
+    color: var(--terracotta);
+    transition: transform .35s ease;
+  }
+  .faq__item[open] summary::after { transform: rotate(45deg); }
+  .faq__item[open] summary { color: var(--terracotta); }
+  .faq__answer {
+    padding-top: 16px;
+    color: var(--ink-mute);
+    font-size: 16px;
+    max-width: 680px;
+  }
+
+  /* ==========================================================
+     FOOTER
+     ========================================================== */
+  .footer {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 100px 0 40px;
+  }
+  .footer__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(245,240,232,0.15);
+  }
+  .footer__brand {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 36px;
+  }
+  .footer__brand span {
+    display: block;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-top: 4px;
+  }
+  .footer__tagline {
+    color: rgba(245,240,232,0.7);
+    margin-top: 16px;
+    max-width: 320px;
+    font-size: 15px;
+  }
+  .footer__col h4 {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.5);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .footer__col ul { list-style: none; }
+  .footer__col li { margin-bottom: 10px; }
+  .footer__col a {
+    color: rgba(245,240,232,0.85);
+    font-size: 14px;
+    transition: color .25s ease;
+  }
+  .footer__col a:hover { color: var(--terracotta-soft); }
+  .footer__bottom {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.04em;
+  }
+  .footer__bottom .hutg {
+    color: rgba(245,240,232,0.7);
+    font-family: var(--serif);
+    font-style: italic;
+  }
+  @media (max-width: 880px) { .footer__top { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 540px) { .footer__top { grid-template-columns: 1fr; gap: 40px; } }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .9s ease, transform .9s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__logo">
+    Casa Aromatik
+    <span>Esencia Empordà</span>
+  </a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#la-casa">La casa</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="#reservar" class="nav__cta">Reservar</a></li>
+  </ul>
+  <button class="nav__burger" id="burger" aria-label="Menú">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="top">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="eyebrow hero__eyebrow">Peratallada · Costa Brava</p>
+    <h1 class="display hero__title">Casa <em>Aromatik</em></h1>
+    <p class="hero__sub">Una minicasa entre olivos y aromas del Empordà. Piscina privada, jardín de 6.500 m² y el silencio del campo a 15 minutos del mar.</p>
+    <div class="hero__actions">
+      <a href="#reservar" class="btn-primary">
+        Reservar directo
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#la-casa" class="btn-ghost">Descubrir</a>
+    </div>
+  </div>
+  <div class="hero__meta">
+    <div class="stars">★ <span>4,96</span></div>
+    <div class="reviews">27 reseñas verificadas</div>
+  </div>
+</header>
+
+<!-- ==================== INTRO ==================== -->
+<section class="intro" id="la-casa">
+  <div class="container">
+    <div class="intro__grid">
+      <div class="reveal">
+        <p class="eyebrow">Bienvenido</p>
+        <h2 class="display intro__title">Una pausa <em>aromática</em> en el corazón del Empordà</h2>
+        <div class="intro__text body-lg body-mute">
+          <p>Casa Aromatik es una pequeña casa de campo de 85 m² rodeada por un jardín de 6.500 m² en Peratallada, uno de los pueblos medievales más bellos de Cataluña. Un espacio diseñado para desconectar entre lavanda, romero y el canto de las cigarras.</p>
+          <p>Dos dormitorios, piscina privada, porche con barbacoa de gas y todo lo necesario para que solo te preocupes de descansar y descubrir la Costa Brava interior. Wifi de 200 Mbps, aire acondicionado, cocina completa y los detalles que convierten una estancia en un recuerdo.</p>
+        </div>
+        <div class="intro__signature">
+          Arnau<small>Tu anfitrión · 4 años de experiencia</small>
+        </div>
+      </div>
+      <div class="intro__image reveal">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Casa Aromatik en Peratallada" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div><div class="stats__num">5</div><div class="stats__label">Viajeros</div></div>
+      <div><div class="stats__num">2</div><div class="stats__label">Dormitorios</div></div>
+      <div><div class="stats__num">85m²</div><div class="stats__label">Interior</div></div>
+      <div><div class="stats__num">6.500m²</div><div class="stats__label">Jardín</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEATURES ==================== -->
+<section class="features">
+  <div class="container">
+    <div class="features__head reveal">
+      <p class="eyebrow">Lo que incluye</p>
+      <h2 class="display features__title">Pensado para que todo <em>fluya</em></h2>
+    </div>
+    <div class="features__grid">
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 16c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1"/><path d="M2 20c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1"/><circle cx="8" cy="8" r="2"/></svg>
+        <h3 class="feature__name">Piscina privada</h3>
+        <p class="feature__desc">Una de las pocas de la zona. Vistas al valle y tumbonas a la sombra de los pinos.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/><path d="M12 22V12M4 7l8 5 8-5"/></svg>
+        <h3 class="feature__name">Porche con barbacoa</h3>
+        <p class="feature__desc">Barbacoa de gas y mesa exterior para cenas largas bajo el cielo del Empordà.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+        <h3 class="feature__name">Wifi 200 Mbps</h3>
+        <p class="feature__desc">Fibra simétrica. Trabaja, ve películas en streaming o haz videollamadas sin interrupciones.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        <h3 class="feature__name">Cocina equipada</h3>
+        <p class="feature__desc">Aceite, sal, vinagre, café y té de bienvenida. Todo listo para cocinar producto local.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h20M2 12a10 10 0 0 1 20 0M2 12a10 10 0 0 0 20 0"/><path d="M12 2v20"/></svg>
+        <h3 class="feature__name">A/C en toda la casa</h3>
+        <p class="feature__desc">Climatización individual en cada habitación para los días de tramontana o de chicharrina.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <h3 class="feature__name">Llegada autónoma</h3>
+        <p class="feature__desc">Caja de seguridad para llaves. Llegas cuando quieras, sin esperas ni protocolos.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <h3 class="feature__name">Aparcamiento propio</h3>
+        <p class="feature__desc">Plaza gratuita dentro de la propiedad. Llega tranquilo con coche o moto.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3 class="feature__name">Vistas al valle</h3>
+        <p class="feature__desc">Amaneceres sobre los campos cultivados y atardeceres rosados desde el porche.</p>
+      </div>
+      <div class="feature reveal">
+        <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3 class="feature__name">Anfitrión 4,71★</h3>
+        <p class="feature__desc">Respuesta en menos de 1 hora. Más de 2.200 reseñas como anfitrión profesional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GALLERY ==================== -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="gallery__head reveal">
+      <div>
+        <p class="eyebrow">Galería</p>
+        <h2 class="display gallery__title">Cada rincón <em>cuenta</em></h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--wide gallery__item--tall reveal">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg" alt="Casa Aromatik vista exterior" loading="lazy">
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Salón Casa Aromatik" loading="lazy">
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Espacio interior" loading="lazy">
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal" loading="lazy">
+      </div>
+      <div class="gallery__item gallery__item--tall reveal">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio" loading="lazy">
+      </div>
+      <div class="gallery__item gallery__item--wide reveal">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Detalle de la casa" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ROOMS ==================== -->
+<section class="rooms">
+  <div class="container">
+    <div class="rooms__head reveal">
+      <p class="eyebrow">¿Dónde dormirás?</p>
+      <h2 class="display rooms__title">Dos dormitorios, <em>cuatro camas</em></h2>
+    </div>
+    <div class="rooms__grid">
+      <article class="room reveal">
+        <div class="room__image">
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal con cama king" loading="lazy">
+        </div>
+        <h3 class="room__name">Dormitorio principal</h3>
+        <p class="room__beds">1 cama king · A/C · Vistas al jardín</p>
+      </article>
+      <article class="room reveal">
+        <div class="room__image">
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio con litera triple" loading="lazy">
+        </div>
+        <h3 class="room__name">Dormitorio familiar</h3>
+        <p class="room__beds">1 cama de matrimonio + 1 litera triple · Ideal familias</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LOCATION ==================== -->
+<section class="location" id="ubicacion">
+  <div class="container">
+    <div class="location__grid">
+      <div class="reveal">
+        <p class="eyebrow" style="color: var(--terracotta-soft);">Ubicación</p>
+        <h2 class="display location__title">Peratallada, en el <em>Baix Empordà</em></h2>
+        <div class="location__text">
+          <p>Uno de los conjuntos medievales mejor conservados de Cataluña. Calles empedradas, plazas de piedra, murallas y restaurantes con estrella a 5 minutos a pie.</p>
+          <p>Y la Costa Brava interior alrededor: cala Pelosa, Begur, Pals, Calella de Palafrugell, los meandros del Ter. El equilibrio perfecto entre campo, mar y cultura.</p>
+        </div>
+        <ul class="location__list">
+          <li><span>Pueblo de Peratallada</span><span>2 min</span></li>
+          <li><span>Playa de Pals</span><span>15 min</span></li>
+          <li><span>Begur · Cala Sa Tuna</span><span>20 min</span></li>
+          <li><span>Girona ciudad</span><span>35 min</span></li>
+          <li><span>Aeropuerto de Girona</span><span>40 min</span></li>
+          <li><span>Barcelona</span><span>1h 20min</span></li>
+        </ul>
+      </div>
+      <div class="location__map reveal">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=3.0%2C41.94%2C3.15%2C42.04&layer=mapnik&marker=41.984%2C3.082"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Casa Aromatik en Peratallada">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section class="reviews" id="resenas">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Lo que dicen los huéspedes</p>
+      <div class="reviews__rating">4,96<span class="of">/5</span></div>
+      <div class="reviews__stars">★ ★ ★ ★ ★</div>
+      <div class="reviews__count">27 reseñas verificadas</div>
+    </div>
+    <div class="reviews__breakdown reveal">
+      <div><div class="review-stat__num">5,0</div><div class="review-stat__label">Veracidad</div></div>
+      <div><div class="review-stat__num">4,9</div><div class="review-stat__label">Ubicación</div></div>
+      <div><div class="review-stat__num">4,7</div><div class="review-stat__label">Limpieza</div></div>
+      <div><div class="review-stat__num">4,7</div><div class="review-stat__label">Llegada</div></div>
+      <div><div class="review-stat__num">4,6</div><div class="review-stat__label">Comunicación</div></div>
+      <div><div class="review-stat__num">4,6</div><div class="review-stat__label">Calidad</div></div>
+    </div>
+    <div class="reviews__quotes">
+      <blockquote class="quote reveal">
+        <p class="quote__text">"Un oasis. La piscina con vistas al valle es lo mejor del verano. Volveremos seguro."</p>
+        <cite class="quote__author">Marta · Junio 2024</cite>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p class="quote__text">"Ubicación inmejorable para descubrir la Costa Brava sin agobios. Casa preciosa y muy cuidada."</p>
+        <cite class="quote__author">David · Agosto 2024</cite>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p class="quote__text">"Perfecto para una escapada en familia. Los niños no querían salir de la piscina y nosotros del porche."</p>
+        <cite class="quote__author">Laura · Julio 2024</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOOKING ==================== -->
+<section class="booking" id="reservar">
+  <div class="container">
+    <div class="booking__head reveal">
+      <p class="eyebrow">Reserva directa</p>
+      <h2 class="display booking__title">Reserva <em>sin intermediarios</em></h2>
+      <p class="body-lg body-mute" style="margin-top: 16px;">Mismas garantías. Mejor precio. Comunicación directa.</p>
+    </div>
+
+    <div class="booking__perks reveal">
+      <div class="perk">
+        <svg class="perk__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h3 class="perk__title">Mejor precio garantizado</h3>
+        <p class="perk__desc">Sin la comisión de las plataformas. Hasta un 15% más barato.</p>
+      </div>
+      <div class="perk">
+        <svg class="perk__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <h3 class="perk__title">Trato directo</h3>
+        <p class="perk__desc">Hablas con Arnau, no con un bot. Respuesta en menos de 1h.</p>
+      </div>
+      <div class="perk">
+        <svg class="perk__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3 class="perk__title">Pago seguro</h3>
+        <p class="perk__desc">Pasarela cifrada con tarjeta. Confirmación instantánea.</p>
+      </div>
+    </div>
+
+    <div class="booking__widget reveal">
+      <!-- =================================================
+           👇 AQUÍ VA EL EMBED DE SMOOBU
+           
+           1. Entra en Smoobu → Configuración → Booking Tool
+           2. Selecciona "Página individual" para Casa Aromatik
+           3. Copia el código embed (es un script o un iframe)
+           4. Borra el div de abajo "booking__placeholder" y pega tu código aquí
+           
+           Ejemplo del código que te dará Smoobu (NO uses este, es solo ilustrativo):
+           
+           <div id="apartmentIframe-XXXXXX"></div>
+           <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/ApartmentIframe.js"></script>
+           <script type="text/javascript">
+             ApartmentIframe.initialize({ "id": XXXXXX, "baseUrl": "https://login.smoobu.com" });
+           </script>
+           ================================================= -->
+
+      <div class="booking__placeholder">
+        <h3>Hueco para el motor de reservas Smoobu</h3>
+        <p>Cuando tengas el código embed de Smoobu, sustituye este bloque por él. El motor mostrará disponibilidad en tiempo real, precios y permitirá pago directo con tarjeta.</p>
+        <p style="margin-top: 16px;">Ruta en Smoobu: <code>Configuración</code> → <code>Booking Tool</code> → <code>Embed code</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="faq">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="display faq__title">Antes de tu <em>llegada</em></h2>
+    </div>
+    <div class="faq__list reveal">
+      <details class="faq__item">
+        <summary>¿A qué hora son el check-in y el check-out?</summary>
+        <p class="faq__answer">El check-in es a partir de las 15:00 y el check-out antes de las 11:00. Como tenemos llegada autónoma con caja de seguridad, puedes llegar a la hora que quieras dentro de ese rango.</p>
+      </details>
+      <details class="faq__item">
+        <summary>¿Se admiten mascotas?</summary>
+        <p class="faq__answer">Consúltanos previamente. Solemos aceptar mascotas pequeñas y medianas con un suplemento de limpieza. Escríbenos antes de reservar para confirmar.</p>
+      </details>
+      <details class="faq__item">
+        <summary>¿La piscina está vallada?</summary>
+        <p class="faq__answer">No. Si viajas con niños pequeños, te recomendamos supervisión continua en el exterior. La piscina no tiene puerta ni valla con cierre.</p>
+      </details>
+      <details class="faq__item">
+        <summary>¿Hay aparcamiento?</summary>
+        <p class="faq__answer">Sí, plaza de aparcamiento gratuita dentro de la propiedad. Caben 2 coches sin problema.</p>
+      </details>
+      <details class="faq__item">
+        <summary>¿Cuál es la política de cancelación?</summary>
+        <p class="faq__answer">Reembolso completo si cancelas con más de 14 días de antelación. Entre 7 y 14 días, reembolso del 50%. Menos de 7 días, no reembolsable. Te detallamos la política exacta en el motor de reserva.</p>
+      </details>
+      <details class="faq__item">
+        <summary>¿Dónde está exactamente?</summary>
+        <p class="faq__answer">En las afueras de Peratallada, Girona. Te enviamos la ubicación exacta y las instrucciones de llegada por correo en cuanto confirmas la reserva.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          Casa Aromatik
+          <span>Esencia Empordà</span>
+        </div>
+        <p class="footer__tagline">Una pequeña casa de campo en Peratallada, en el corazón del Baix Empordà. Reserva directa sin intermediarios.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visitar</h4>
+        <ul>
+          <li><a href="#la-casa">La casa</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@casaaromatik.com">hola@casaaromatik.com</a></li>
+          <li><a href="tel:+34600000000">+34 600 000 000</a></li>
+          <li><a href="https://wa.me/34600000000">WhatsApp</a></li>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal.html">Aviso legal</a></li>
+          <li><a href="/privacidad.html">Privacidad</a></li>
+          <li><a href="/cookies.html">Cookies</a></li>
+          <li><a href="/condiciones.html">Condiciones de reserva</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year"></span> Casa Aromatik · Todos los derechos reservados</div>
+      <div class="hutg">Registro Turístico de Cataluña: HUTG-078586</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Burger
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
