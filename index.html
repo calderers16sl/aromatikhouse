@@ -726,8 +726,13 @@
     border: 1px solid var(--line);
     padding: clamp(20px, 3vw, 40px);
     border-radius: 4px;
-    min-height: 600px;
     box-shadow: 0 24px 60px -32px rgba(31,42,30,0.25);
+    overflow: visible;
+  }
+  #apartmentIframeAll iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none;
   }
   .booking__placeholder {
     background: repeating-linear-gradient(
