@@ -953,7 +953,7 @@
         </div>
       </div>
       <div class="intro__image reveal">
-        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Casa Aromatik en Peratallada" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Casa Aromatik en Peratallada" loading="lazy" referrerpolicy="no-referrer">
       </div>
     </div>
   </div>
@@ -1039,22 +1039,22 @@
     </div>
     <div class="gallery__grid">
       <div class="gallery__item gallery__item--wide gallery__item--tall reveal">
-        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg" alt="Casa Aromatik vista exterior" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/774085e0-36f7-43b6-b244-4f9eaf2cf306.jpeg" alt="Casa Aromatik vista exterior" loading="lazy" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item reveal">
-        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Salón Casa Aromatik" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/b099f7ae-2982-4f84-8393-76fcb20bc19f.jpeg" alt="Salón Casa Aromatik" loading="lazy" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item reveal">
-        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Espacio interior" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Espacio interior" loading="lazy" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item reveal">
-        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal" loading="lazy" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item gallery__item--tall reveal">
-        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio" loading="lazy" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item gallery__item--wide reveal">
-        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Detalle de la casa" loading="lazy">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-955650673138169730/original/7aba1cef-d502-405b-b089-58e6d15c88a6.jpeg" alt="Detalle de la casa" loading="lazy" referrerpolicy="no-referrer">
       </div>
     </div>
   </div>
@@ -1070,14 +1070,14 @@
     <div class="rooms__grid">
       <article class="room reveal">
         <div class="room__image">
-          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal con cama king" loading="lazy">
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/f46a11cb-2ec9-4b36-a3b5-6f14891dc39e.jpeg" alt="Dormitorio principal con cama king" loading="lazy" referrerpolicy="no-referrer">
         </div>
         <h3 class="room__name">Dormitorio principal</h3>
         <p class="room__beds">1 cama king · A/C · Vistas al jardín</p>
       </article>
       <article class="room reveal">
         <div class="room__image">
-          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio con litera triple" loading="lazy">
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-955650673138169730/original/49dea1be-48b5-4f69-ab0b-17a55b9aacc0.jpeg" alt="Segundo dormitorio con litera triple" loading="lazy" referrerpolicy="no-referrer">
         </div>
         <h3 class="room__name">Dormitorio familiar</h3>
         <p class="room__beds">1 cama de matrimonio + 1 litera triple · Ideal familias</p>
@@ -1275,6 +1275,20 @@
   window.addEventListener('scroll', () => {
     if (window.scrollY > 60) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
+  });
+
+  // Smooth scroll for all anchor links (cross-browser including iOS)
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').slice(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        const navHeight = nav.offsetHeight;
+        const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 12;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
   });
 
   // Burger
