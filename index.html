@@ -1180,12 +1180,31 @@
     </div>
 
     <div class="booking__widget reveal">
-      <div id="apartmentIframeAll"><script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
-        <script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/en/booking-tool/iframe/333907", "baseUrl": "https:/
+      <!-- =================================================
+           👇 AQUÍ VA EL EMBED DE SMOOBU
+           
+           1. Entra en Smoobu → Configuración → Booking Tool
+           2. Selecciona "Página individual" para Casa Aromatik
+           3. Copia el código embed (es un script o un iframe)
+           4. Borra el div de abajo "booking__placeholder" y pega tu código aquí
+           
+           Ejemplo del código que te dará Smoobu (NO uses este, es solo ilustrativo):
+           
+           <div id="apartmentIframe-XXXXXX"></div>
+           <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/ApartmentIframe.js"></script>
+           <script type="text/javascript">
+             ApartmentIframe.initialize({ "id": XXXXXX, "baseUrl": "https://login.smoobu.com" });
+           </script>
+           ================================================= -->
+
+      <div id="apartmentIframeAll">
+        <script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+        <script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/en/booking-tool/iframe/333907", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframeAll"})</script>
+      </div>
+    </div>
   </div>
 </section>
 
-      
 <!-- ==================== FAQ ==================== -->
 <section class="faq">
   <div class="container">
@@ -1295,22 +1314,4 @@
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-  // Reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+  navLinks.querySelectorAll('a').forEac
