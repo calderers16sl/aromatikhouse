@@ -1324,8 +1324,15 @@
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('in');
+    } else {
+      io.observe(el);
+    }
+  });
 
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
